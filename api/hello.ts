@@ -1,5 +1,5 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
+import { VercelRequest, VercelResponse } from "@vercel/node";
 
-export default (req: VercelRequest, res: VercelResponse) => {
+module.exports = (req: VercelRequest, res: VercelResponse) => {
   res.status(200).json({ message: "Hello from Serverless Function!" });
 };
